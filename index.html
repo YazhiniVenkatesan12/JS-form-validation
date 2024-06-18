@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Form Validation</title>
+    <script src="script.js"></script>
+
+    <style>
+        fieldset {
+            border: 1px solid black;
+            padding: 10px;
+            margin: 0;
+        }
+
+        legend {
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        input[type="text"],
+            input[type="email"],
+            input[type="password"],
+            textarea,
+            input[type="date"] {
+                width: calc(100% - 20px);
+                padding: 8px;
+                margin-bottom: 10px;
+                box-sizing: border-box;
+                border: 1px solid #ccc;
+                border-radius: 4px;
+            }
+
+            input[type="radio"] {
+                margin-left: 20px;
+            }
+
+            input[type="submit"] {
+                padding: 10px 20px;
+
+                border-radius: 5px;
+                cursor: pointer;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Registration Form</h1>
+        <form action="" onsubmit="return val()" name="myform">
+            <fieldset>
+                <legend>
+                    User personal information
+                </legend>
+                <label
+                    >Enter your full name</label
+                >
+                <input type="text" name="name" />
+                <label>Enter your email</label>
+                <input
+                    type="email"
+                    name="email"
+                    />
+                    <label>Enter your password</label>
+                    <input
+                        type="password"
+                        name="pass"
+                    />
+                    <label
+                        >Confirm your password</label
+                    >
+                    <input
+                        type="password"
+                        name="confirmPass"
+                    />
+                    <label>Enter your gender</label>
+                    <input
+                        type="radio"
+                        name="gender"
+                        value="male"
+                    />Male
+                    <input
+                        type="radio"
+                        name="gender"
+                        value="female"
+                    />Female
+                    <input
+                        type="radio"
+                        name="gender"
+                        value="others"
+                    />Others
+                    <br><br>
+                    <label>Enter your Date of
+                        Birth</label>
+                    <input type="date" name="dob" />
+                    <label>Enter your Address:</label>
+                    <textarea
+                        name="address"
+                    ></textarea>
+                    <input
+                    type="submit"
+                    value="submit"
+                />
+            </fieldset>
+        </form>
+    </body>
+</html>
+    
+</body>
+</html>
